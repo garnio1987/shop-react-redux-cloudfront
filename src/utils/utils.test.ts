@@ -1,3 +1,7 @@
 import {formatAsPrice} from './utils';
 
-console.log(formatAsPrice(10));
+describe('formatAsPrice', () => {
+    it('formatAsPrice should work correctly', () => {
+        expect(formatAsPrice(20)).toBe('$20.00');
+    })
+})
